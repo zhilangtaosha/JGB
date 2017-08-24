@@ -1,0 +1,128 @@
+<!--pages/category/goodsList/goodsDetail/index.aml-->
+<view class="contain"> 
+ 
+<!--1.轮播图-->
+<swiper class="home-swiper" indicator-dots="true"
+autoplay="true" interval="3000" duration="1200" circular="true">
+    <swiper-item a:for="{{imgUrls}}">
+        <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </swiper>
+
+
+<!--2.标题view-->
+<view class="titleView">
+<!--<text class="two">【2人抢】</text>-->
+<text class="titleText">修腿破洞牛仔裤</text>
+<view class="collectView" catchTap="collect">
+<image class="collectImg" src="{{collectImg}}"></image>
+</view>
+</view>
+
+<!--3.补贴描述view-->
+<view class="desView">
+<!--①.补贴view-->
+<view class="subsidyView">
+<view class="suc">抢成功补贴¥20</view>
+<view class="fai">抢失败补贴¥8</view>
+</view>
+<!--②.人数view-->
+<view class="peopleView">
+<view class="peopleCount">还差2人凑齐</view>
+<view class="buyCount">100人已购买</view>
+</view>
+<!--③.价格view-->
+<view class="priceView">
+<view class="pv">
+<text class="newP">¥128</text>
+<text class="oldP">¥198</text>
+</view>
+<view class="mailView">
+<text class="mail">包邮</text>
+<text class="insurance">送运费险</text>
+</view>
+</view>
+</view>
+
+<!--4.抢购流程view-->
+<view class="robProcessView" catchTap="look">
+<view class="processLeftView">
+<view class="robProcess">抢购流程</view>
+<text class="robDes">①成功付款 - ②匹配抢购 - ③返回补贴 - ④发货寄件</text>
+</view>
+<image class="arrow" src="../../../../image/0106arrow3x.png"></image>
+</view>
+
+
+<!--选项View-->
+<view class="chooseView">
+<!--颜色-->
+<view class="colorView">
+<text class="colorText">商品颜色</text>
+    <text a:for="{{colorBoxs}}" class="colorBox {{currentColorIndex == index ? 'selectedColorBox' : ''}}" onTap="tapColorBox" id="{{index}}" data-orderStatus="{{item.orderStatus}}"> {{item.title}} 
+    </text>
+</view>
+<!--大小-->
+<view class="sizeView">
+<text class="sizeText">商品大小</text>
+    <text a:for="{{sizeBoxs}}" class="sizeBox {{currentSizeIndex == index ? 'selectedSizeBox' : ''}}" onTap="tapSizeBox" id="{{index}}" data-orderStatus="{{item.orderStatus}}"> {{item.title}} 
+    </text>
+</view>
+</view>
+
+<!--商品说明view-->
+<view class="instructionView">
+<!--商品服务-->
+<view class="serviceView">
+<text class="serviceTitle">商品说明</text>
+<image src="../../../../image/advert.png"></image>
+<text class="serviceText">24小时发货</text>
+<image src="../../../../image/advert.png"></image>
+<text class="serviceText">7天无理由退换货</text>
+<image src="../../../../image/advert.png"></image>
+<text class="serviceText">售后补贴</text>
+</view>
+<!--商品参数-->
+<view class="paramView">
+<text class="t1">品牌名称</text><text class="t2">宝姿</text>
+</view>
+<view class="paramView">
+<text class="t1">商品材质</text><text class="t2">纯棉</text>
+</view>
+<view class="paramView">
+<text class="t1">规格大小</text><text class="t2">常规</text>
+</view>
+<view class="paramView">
+<text class="t1">发货地址</text><text class="t2">浙江金华</text>
+</view>
+<view class="paramView">
+<text class="t1">商品描述</text><text class="t2">破洞牛仔裤在中国的流行，始于20世纪90年代。割破牛仔服的风尚是由美国人发明的，最初发明破洞牛仔裤的人可不是为了炫耀时尚，而是藉此表达对主流的抵制。破洞牛仔裤与看起来又脏又旧的牛仔一起，曾在几年前的欧美上流社会里回潮。</text>
+</view>
+</view>
+
+<!--图文详情view-->
+<view class="picDetailView">
+<text class="picTitleText">图文详情</text>
+<image a:for="{{imgUrls}}" src="{{item}}"></image>
+</view>
+
+<!--底部操作view-->
+<view class="actionView">
+<!--分享-->
+<!-- <button class="shareBtn" open-type="share" style="width:{{shareBtn_W}}px;"> -->
+<image class="shareImg" src="../../../../image/share.png"></image>
+</button>
+<!--购物车-->
+<view class="buyCarView" catchTap="buyCarAction" style="width:{{shareBtn_W}}px;">
+<image src="../../../../image/buyCar.png">
+<text class="badge" a:if="{{showBadge}}"></text>
+</image>
+
+</view>
+
+<!--加入抢购-->
+<view class="buyView" catchTap="joinBuyCarAction" style="width:{{robView_W}}px;">加入购物车</view>
+<view class="robView" catchTap="robAction" style="width:{{robView_W}}px;">立即抢购</view>
+</view>
+
+</view>

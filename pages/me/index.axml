@@ -1,0 +1,33 @@
+<view class="contain">
+ 
+<!--头部-->
+<view class="headerView">
+  <!-- <view class="contactView">
+ <contact-button size="27"></contact-button> 
+</view>   -->
+<view class="iconView">
+<image class="picture" src="{{iconUrl}}"> </image>
+</view>
+<view class="nameView">
+ <label class="name">{{name}}</label>
+</view>
+</view>
+
+<!--菜单栏-->
+ <view class="menuView">
+<view class="menuBox" a:for="{{itemList}}" id="{{index}}" catchTap="itemTap">
+<view>
+<text class="num" style="color:{{item.color}};">{{item.num}}</text>
+<text class="unit" style="color:{{item.color}};">{{item.unit}}</text>
+</view>
+ <text class="des">{{item.text}}</text>
+</view>
+</view>
+
+<!--表格-->
+<view class="cell" a:for="{{cellList}}" id="{{index}}" catchTap="cellTap">
+ <label>{{item.text}}</label>
+  <image class="arrow" src="../../image/0106arrow3x.png"></image>
+</view>
+
+</view>

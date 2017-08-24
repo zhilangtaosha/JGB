@@ -1,0 +1,73 @@
+<view class="contain">
+
+<!--公告-->
+<view class="advertView" onTap="clickedAdvert">
+<text class="des">凑满2人系统就会自动匹配抢购，抢购成功或失败都有补贴！当前我的补贴比例是30%。</text>
+<view class="arrow"> > </view>
+</view>
+
+<!--最新订单来自-->
+<view class="newOrderView" style="visibility:{{created?'visible':'hidden'}};">
+最新订单来自深圳的小美,1秒前
+</view>
+
+<!--轮播图-->
+ <swiper class="home-swiper" indicator-dots="true"
+                autoplay="true" interval="3000" duration="1200" circular="true">
+            
+ <swiper-item a:for="{{scrollImgs}}" >
+ <image src="{{item.pic}}" class="slide-image" onTap="tapSwiper" data-title="{{item.title}}"/>
+</swiper-item>
+          
+        </swiper> 
+
+<!--菜单栏1-->
+<view class="m" >
+<view class="m-box" a:for="{{menuBox}}" catchTap="tapMenuBox" data-title="{{item.title}}">
+<image src="{{item.pic}}"></image>
+<text>{{item.title}}</text>
+</view>
+</view>
+
+ 
+<!--爆款背景view-->
+<view class="bgView">
+<!--box-->
+<view a:for="{{hotGoodsList}}" class="contentBox" style="width:{{contentBoxWidth}}px;" onTap="tapContentBox">
+<!--商品图片-->
+<view class="imgView">
+<image class="contentImage" src="{{item.goodsPic}}" style="height:{{picH}}px;">
+<text class="peopleCount">2人抢</text>
+<text class="buyCount">已售100</text>
+</image>
+</view>
+<!--标题-->
+<text class="boxTitle">{{item.title}}</text>
+<view class="middleView">
+<!--左边view-->
+<view class="leftView">
+<view class="sucView">
+<text class="buy">抢购成功</text>
+<text class="subsidy">补贴{{item.sucSubsidy}}元</text>
+</view>
+<view class="faiView">
+<text class="buy">抢购失败</text>
+<text class="subsidy">补贴{{item.faiSubsidy}}元</text>
+</view>
+</view>
+<!--右边view-->
+<view class="rightView">
+<text class="oldPrice">¥{{item.oldPrice}}</text>
+<text class="nowPrice">¥{{item.nowPrice}}</text>
+</view>
+</view>
+<!--立即抢购-->
+<view class="joinList" catchTap="clickedJoinList">立即抢购</view>
+</view>
+<!--（2）无数据图-->
+<view class="nodataView" a:if="{{hotGoodsList.length==0}}" style="width:150px;height:150px; margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+</view>
+</view>
+
+</view>

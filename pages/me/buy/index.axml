@@ -1,0 +1,65 @@
+<view class ='contain'> 
+
+<!--购View-->
+<view class="bgView">
+ <!--(1)cell-->
+ <view class="cell"  a:for="{{buyList}}" catchTap="tapBuyCell">
+ <!--a.顶部view-->
+ <view class="topView">
+ <!--左边view-->
+   <view class="leftView">
+   <image src= "{{item.img}}"></image>
+   </view>
+   <!--右边view-->
+   <view class="rightView">
+   <view class="titleView">
+   <text>{{item.title}}</text>
+   <view class="deleteView">
+      <image src="../../../image/delete.png" catchTap="tapDelete"></image>
+   </view>
+
+   </view>
+   <view class="sizeView">
+    <text class="size">商品规格</text>
+    <text class="sizeText">{{item.size}} 白色</text>
+   </view>
+   <view class="sucSubsidyView">
+    <text class="sucSubsidy">抢购成功</text>
+    <view class="suc">
+     <text class="sucSubsidyText">补贴{{item.sucSubsidy}}元</text> 
+    </view>
+   </view>
+   <view class="faiSubsidyView">
+     <text class="faiSubsidy">抢购失败</text> 
+     <view class="fai">
+      <text class="faiSubsidyText">补贴{{item.faiSubsidy}}元</text>
+     </view>
+    
+   </view>
+ </view>
+      </view>
+   <!--b.底部view-->
+<view class="bottomView">
+<view class="priceView">
+  <text class="totalPriceText">￥{{item.totalPrice}}</text>
+  <text class="oldPriceText">¥{{item.oldPrice}}</text> 
+</view>
+   <view class="robNow" catchTap="pay">去付款</view>
+</view>
+
+    </view>
+    <!--（2）无数据图-->
+<view class="nodataView" a:if="{{buyList.length==0}}" style="width:150px;height:150px;margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+ </view>
+</view>
+
+
+  </view>
+
+
+
+
+
+
+

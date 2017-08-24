@@ -1,0 +1,148 @@
+<view class="contain">
+
+<!--搜索输入框-->
+<view class="searchInputView">
+  <!--<form bindsubmit="bindFormSubmit">-->
+  <input class="searchInput" placeholder="🔍 搜索商品关键字" type="text" value="{{inputValue}}" maxlength="10"  onInput="phoneInputValueChanged" confirm-type="search" onConfirm="bindconfirm" onFocus="bindfocus"/>
+   <!--<button class="sureBtn" type="warn" plain="true" form-type="submit"> 确定 </button>
+  </form>-->
+</view>
+
+<!--2.菜单栏-->
+<view class ='menuView'> 
+    <view a:for="{{menuBoxs}}" class="titleView {{currentIndex == index ? 'selectedBox' : ''}}" onTap="tapMenuBox" id="{{index}}" data-orderStatus="{{item.orderStatus}}"> {{item.title}}
+    </view>
+ </view>
+
+<!--爆款背景view-->
+<view class="bgView" style="display :{{currentIndex==0 ? 'block':'none'}};" >
+<!--box-->
+<view a:for="{{hotGoodsList}}" class="contentBox" style="width:{{contentBoxWidth}}px;" onTap="tapContentBox">
+<!--商品图片-->
+<view class="imgView">
+<image class="contentImage" src="{{item.img}}" style="height:{{picH}}px;">
+<text class="peopleCount">2人抢</text>
+<text class="buyCount">已售100</text>
+</image>
+</view>
+<!--标题-->
+<text class="boxTitle">{{item.title}}</text>
+<view class="middleView">
+<!--左边view-->
+<view class="leftView">
+<view class="sucView">
+<text class="buy">抢购成功</text>
+<text class="subsidy">补贴{{item.sucSubsidy}}元</text>
+</view>
+<view class="faiView">
+<text class="buy">抢购失败</text>
+<text class="subsidy">补贴{{item.faiSubsidy}}元</text>
+</view>
+</view>
+<!--右边view-->
+<view class="rightView">
+<text class="oldPrice">¥200</text>
+<text class="nowPrice">¥120</text>
+</view>
+</view>
+<!--立即抢购-->
+<view class="joinList" catchTap="clickedJoinList">立即抢购</view>
+</view>
+<!--（2）无数据图-->
+<view class="nodataView" a:if="{{hotGoodsList.length==0}}" style="width:150px;height:150px; margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+</view>
+</view>
+
+
+<!--低价款背景view-->
+<view class="bgView" style="display :{{currentIndex==1 ? 'block':'none'}};"  >
+<!--box-->
+<view a:for="{{lowPriceGoodsList}}" class="contentBox" style="width:{{contentBoxWidth}}px;" bindTap="tapContentBox">
+<!--商品图片-->
+<view class="imgView">
+<image class="contentImage" src="{{item.img}}" style="height:{{picH}}px;">
+<text class="peopleCount">2人抢</text>
+<text class="buyCount">已售100</text>
+</image>
+</view>
+<!--标题-->
+<text class="boxTitle">{{item.title}}</text>
+<view class="middleView">
+<!--左边view-->
+<view class="leftView">
+<view class="sucView">
+<text class="buy">抢购成功</text>
+<text class="subsidy">补贴{{item.sucSubsidy}}元</text>
+</view>
+<view class="faiView">
+<text class="buy">抢购失败</text>
+<text class="subsidy">补贴{{item.faiSubsidy}}元</text>
+</view>
+</view>
+<!--右边view-->
+<view class="rightView">
+<text class="oldPrice">¥200</text>
+<text class="nowPrice">¥120</text>
+</view>
+</view>
+<!--立即抢购-->
+<view class="joinList" catchTap="clickedJoinList">立即抢购</view>
+</view>
+<!--（2）无数据图-->
+<view class="nodataView" a:if="{{lowPriceGoodsList.length==0}}" style="width:150px;height:150px; margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+</view>
+</view>
+
+
+<!--销量款背景view-->
+<view class="bgView" style="display :{{currentIndex==2 ? 'block':'none'}};"  >
+<!--box-->
+<view a:for="{{bestSellGoodsList}}" class="contentBox" style="width:{{contentBoxWidth}}px;" bindTap="tapContentBox">
+<!--商品图片-->
+<view class="imgView">
+<image class="contentImage" src="{{item.img}}" style="height:{{picH}}px;">
+<text class="peopleCount">2人抢</text>
+<text class="buyCount">已售100</text>
+</image>
+</view>
+<!--标题-->
+<text class="boxTitle">{{item.title}}</text>
+<view class="middleView">
+<!--左边view-->
+<view class="leftView">
+<view class="sucView">
+<text class="buy">抢购成功</text>
+<text class="subsidy">补贴{{item.sucSubsidy}}元</text>
+</view>
+<view class="faiView">
+<text class="buy">抢购失败</text>
+<text class="subsidy">补贴{{item.faiSubsidy}}元</text>
+</view>
+</view>
+<!--右边view-->
+<view class="rightView">
+<text class="oldPrice">¥200</text>
+<text class="nowPrice">¥120</text>
+</view>
+</view>
+<!--立即抢购-->
+<view class="joinList" catchTap="clickedJoinList">立即抢购</view>
+</view>
+<!--（2）无数据图-->
+<view class="nodataView" a:if="{{bestSellGoodsList.length==0}}" style="width:150px;height:150px; margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+</view>
+</view>
+
+
+ 
+
+
+<!--搜索背景view-->
+<view class="searceBgView" catchtouchmove="catchtouchmove" style="display :{{focusInput==true ? 'block':'none'}};">
+<view a:for="{{searchList}}" class="searchCell" data-cellTitle="{{item.title}}" catchtap="tapSearchCell" >{{item.title}}</view>
+</view>
+
+</view>

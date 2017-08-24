@@ -1,0 +1,30 @@
+<view class="contain">
+
+<!--搜索输入框-->
+<view class="searchInputView">
+  <!--<form bindsubmit="bindFormSubmit">-->
+  <input class="searchInput" placeholder="🔍 搜索商品关键字" type="text" maxlength="10" type="text" onFocus="bindfocus" />
+   <!--<button class="sureBtn" type="warn" plain="true" form-type="submit"> 确定 </button>
+  </form>-->
+
+</view>
+
+
+<!--1.菜单栏scrollview-->
+<scroll-view class ='memuScrollView' scroll-y="{{true}}" scroll-x="{{false}}" style="height:{{menuHeight}}px;"> 
+    <view a:for="{{menuBoxs}}" class="titleView {{currentIndex == index ? 'selectedBox' : ''}}" onTap="clickedMenuBox" id="{{index}}" data-orderStatus="{{item.orderStatus}}"> {{item.title}}  </view>
+ </scroll-view>
+
+
+<!--内容scrollview-->
+<scroll-view class="contentScrollView" scroll-y="{{true}}" scroll-x="{{false}}"  style="height:{{menuHeight}}px;">
+<!--box-->
+ <view a:for="{{contentBoxs}}" class="contentBox" style="width:{{contentBoxWidth}}px; height:{{contentBoxWidth*1.5}}px;" onTap="clickedContentBox" data-title="{{item.title}}">
+<image class="contentImage" src="{{item.img}}" style="width:{{contentBoxWidth}}px;  height:{{contentBoxWidth*1.5-40}}px;">
+</image>
+<text class="contentText">{{item.title}}</text>
+</view> 
+</scroll-view>
+
+</view>
+ 

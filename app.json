@@ -1,0 +1,53 @@
+{
+  "pages": [
+    
+   
+    "pages/home/index",
+    "pages/home/pay/index",
+
+     "pages/category/index",
+     "pages/category/goodsList/index",
+      "pages/category/goodsList/goodsDetail/index",
+    
+    "pages/me/index",
+    "pages/me/rule/index",
+    "pages/me/order/index",
+    "pages/me/wallet/index",
+    "pages/me/collect/index",
+    "pages/me/msg/index",
+    "pages/me/buy/index",
+    "pages/me/suggest/index",
+    "pages/me/question/index"
+  ],
+  "window": {
+    "defaultTitle": "简购宝",
+    "titleBarColor": "white",
+    "backgroundColor":"#ffffff"
+  },
+  "tabBar": {
+    "textColor": "#212121",
+    "selectedColor": "#CD853F",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/home/index",
+         "icon": "image/homeD.png",
+        "activeIcon": "image/homeS.png",
+        "name": "首页"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "icon": "image/categoryD.png",
+        "activeIcon": "image/categoryS.png",
+        "name": "分类"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "icon": "image/meD.png",
+        "activeIcon": "image/meS.png",
+        "name": "我的"
+      }
+    ]
+  }
+
+}

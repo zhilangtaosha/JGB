@@ -1,0 +1,275 @@
+<view class ='contain'> 
+
+<!--0.菜单栏-->
+<view class ='memuView'> 
+    <view a:for="{{menuBoxs}}" class="itemView {{currentIndex == index ? 'selectedBox' : ''}}" onTap="tapMenuBox" id="{{index}}" data-orderStatus="{{item.orderStatus}}"> {{item.title}} 
+    </view>
+ </view>
+
+<!--倒计时View-->
+<view class="countDownView" a:if="{{created}}">
+<text class="t">{{h}}</text>时
+<text class="t">{{m}}</text>分
+<text class="t">{{s}}</text>秒
+</view>
+
+
+
+ <!--1.待发货背景View-->
+<view class="bgView" style="display :{{currentIndex==0 ? 'block':'none'}};  margin-top:{{created ? 0:40}}px;" >
+ <!--（1）待发货cell-->
+ <view class="cell"  a:for="{{waitList}}" catchTap="tapCell">
+ <!--a.顶部view-->
+ <view class="topView">
+ <!--左边view-->
+   <view class="leftView">
+   <image src= "{{item.img}}"></image>
+   </view>
+   <!--右边view-->
+   <view class="rightView">
+   <view class="titleView">
+   <text class="title">{{item.title}}</text>
+    <text class="state">{{item.state}}</text>
+   </view>
+   <view class="sizeView">
+    <text class="size">规格</text>
+    <text class="sizeText">{{item.size}} 白色</text>
+   </view>
+   <view class="sucSubsidyView">
+    <text class="sucSubsidy">抢购成功</text>
+    <view class="suc">
+     <text class="sucSubsidyText">补贴{{item.sucSubsidy}}元</text> 
+    </view>
+   </view>
+   <view class="faiSubsidyView">
+     <text class="faiSubsidy">抢购失败</text> 
+     <view class="fai">
+      <text class="faiSubsidyText">补贴{{item.faiSubsidy}}元</text>
+     </view>
+   </view>
+
+ </view>
+      </view>
+
+
+<!--c.时间view-->
+<view class="timeView">
+<text class="time">{{item.time}}</text>
+<view class="priceView">
+  <text class="newPrice">￥{{item.totalPrice}}</text>
+  <text class="oldPrice">¥{{item.oldPrice}}</text> 
+</view>
+</view>
+
+
+   <!--d.底部view-->
+   <view class="bottomView">
+   <text style="visibility:{{created? 'visible':'hidden'}};">还差1人凑齐,正在匹配..</text>
+   <view class="actionView">
+   <button class="invite" catchTap="invite" open-type="share">邀请好友</button>
+   <button class="refund" catchTap="refund">申请退款</button>
+   </view>
+   </view>
+
+
+</view>
+
+    <!--（2）无数据图-->
+<view class="nodataView" a:if="{{waitList.length==0}}" style="width:150px;height:150px;margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+ </view>
+  </view>
+
+
+
+
+
+
+
+
+ <!--2.已发货背景View-->
+<view class="bgView" style="display :{{currentIndex==1 ? 'block':'none'}};  margin-top:{{created ? 0:40}}px;" >
+ <!--（1）已发货cell-->
+ <view class="cell"  a:for="{{sendList}}" catchTap="tapCell">
+ <!--a.顶部view-->
+ <view class="topView">
+ <!--左边view-->
+   <view class="leftView">
+   <image src= "{{item.img}}"></image>
+   </view>
+   <!--右边view-->
+   <view class="rightView">
+   <view class="titleView">
+   <text class="title">{{item.title}}</text>
+   </view>
+   <view class="sizeView">
+    <text class="size">商品规格</text>
+    <text class="sizeText">{{item.size}} 白色</text>
+   </view>
+   <view class="sucSubsidyView">
+    <text class="sucSubsidy">抢购成功</text>
+    <view class="suc">
+     <text class="sucSubsidyText">补贴{{item.sucSubsidy}}元</text> 
+    </view>
+   </view>
+   <view class="faiSubsidyView">
+     <text class="faiSubsidy">抢购失败</text> 
+     <view class="fai">
+      <text class="faiSubsidyText">补贴{{item.faiSubsidy}}元</text>
+     </view>
+   </view>
+
+ </view>
+      </view>
+
+<!--c.时间view-->
+<view class="timeView">
+<text class="time">{{item.time}}</text>
+<view class="priceView">
+  <text class="newPrice">￥{{item.totalPrice}}</text>
+  <text class="oldPrice">¥{{item.oldPrice}}</text> 
+</view>
+</view>
+
+
+   <!--d.底部view-->
+   <view class="bottomView">
+   <text style="visibility:hidden;">还差1人凑齐,正在匹配..</text>
+   <view class="actionView">
+   <button class="invite" catchTap="exchange">申请换货</button>
+   <button class="refund" catchTap="refund">申请退款</button>
+   </view>
+   </view>
+
+    </view>
+
+    <!--（2）无数据图-->
+<view class="nodataView" a:if="{{sendList.length==0}}" style="width:150px;height:150px;margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+ </view>
+  </view>
+
+
+
+
+
+<!--3.退换中背景View-->
+<view class="bgView" style="display :{{currentIndex==2 ? 'block':'none'}};  margin-top:{{created ? 0:40}}px;" >
+ <!--（1）退换中cell-->
+ <view class="cell"  a:for="{{refundList}}" catchTap="tapCell">
+ <!--a.顶部view-->
+ <view class="topView">
+ <!--左边view-->
+   <view class="leftView">
+   <image src= "{{item.img}}"></image>
+   </view>
+   <!--右边view-->
+   <view class="rightView">
+   <view class="titleView">
+   <text class="title">{{item.title}}</text>
+    <text class="state">{{item.state}}</text>
+   </view>
+   <view class="sizeView">
+    <text class="size">商品规格</text>
+    <text class="sizeText">{{item.size}} 白色</text>
+   </view>
+   <view class="sucSubsidyView">
+    <text class="sucSubsidy">抢购成功</text>
+    <view class="suc">
+     <text class="sucSubsidyText">补贴{{item.sucSubsidy}}元</text> 
+    </view>
+   </view>
+   <view class="faiSubsidyView">
+     <text class="faiSubsidy">抢购失败</text> 
+     <view class="fai">
+      <text class="faiSubsidyText">补贴{{item.faiSubsidy}}元</text>
+     </view>
+   </view>
+
+ </view>
+      </view>
+
+
+<!--c.时间view-->
+<view class="timeView">
+<text class="time">{{item.time}}</text>
+<view class="priceView">
+  <text class="newPrice">￥{{item.totalPrice}}</text>
+  <text class="oldPrice">¥{{item.oldPrice}}</text> 
+</view>
+</view>
+
+
+   <!--d.底部view-->
+   <view class="bottomView" a:if="{{item.state=='已同意换货' || item.state=='已同意退款'}}">
+    <text style="visibility:hidden;">还差1人凑齐,正在匹配..</text>
+   <view class="actionView">
+   <button class="refund" catchTap="sendDelivery">去寄快递</button>
+   </view>
+   </view>
+    </view>
+
+    <!--（2）无数据图-->
+<view class="nodataView" a:if="{{refundList.length==0}}" style="width:150px;height:150px;margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+ </view>
+  </view>
+
+
+
+<!--4.已完成背景View-->
+<view class="bgView" style="display :{{currentIndex==3 ? 'block':'none'}};  margin-top:{{created ? 0:40}}px;" >
+ <!--（1）已完成cell-->
+ <view class="cell"  a:for="{{finishList}}" catchTap="tapCell">
+ <!--a.顶部view-->
+ <view class="topView">
+ <!--左边view-->
+   <view class="leftView">
+   <image src= "{{item.img}}"></image>
+   </view>
+   <!--右边view-->
+   <view class="rightView">
+   <view class="titleView">
+   <text class="title">{{item.title}}</text>
+   </view>
+   <view class="sizeView">
+    <text class="size">商品规格</text>
+    <text class="sizeText">{{item.size}} 白色</text>
+   </view>
+   <view class="sucSubsidyView">
+    <text class="sucSubsidy">抢购成功</text>
+    <view class="suc">
+     <text class="sucSubsidyText">补贴{{item.sucSubsidy}}元</text> 
+    </view>
+   </view>
+   <view class="faiSubsidyView">
+     <text class="faiSubsidy">抢购失败</text> 
+     <view class="fai">
+      <text class="faiSubsidyText">补贴{{item.faiSubsidy}}元</text>
+     </view>
+   </view>
+
+ </view>
+      </view>
+
+
+<!--c.时间view-->
+<view class="timeView">
+<text class="time">{{item.time}}</text>
+<view class="priceView">
+  <text class="newPrice">￥{{item.totalPrice}}</text>
+  <text class="oldPrice">¥{{item.oldPrice}}</text> 
+</view>
+</view>
+
+    </view>
+
+    <!--（2）无数据图-->
+<view class="nodataView" a:if="{{finishList.length==0}}" style="width:150px;height:150px;margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+ </view>
+  </view>
+
+
+
+  </view>

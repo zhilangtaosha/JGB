@@ -1,0 +1,26 @@
+
+ .contain{
+    width: 100%;
+} 
+/*表格*/
+.cell{
+    display: flex;
+    flex-direction: row;
+    height: 120rpx;
+justify-content: space-between;
+align-items: center;
+    background: white;
+    border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+/*文字*/
+.cell label{
+    font-size: 13px;
+    /*垂直居中*/
+    margin-left: 15px;
+}
+/*箭头*/
+.cell .arrow{
+     width: 8px;
+    height: 9px;
+   margin-right: 15px;
+}

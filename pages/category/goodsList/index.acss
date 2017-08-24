@@ -1,0 +1,220 @@
+text{
+  font-weight: 350;
+}
+.contain{ 
+/*隐藏滚动条*/
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+
+/*搜索框view*/
+.searchInputView {
+background: white;
+width: 100%;
+height: 40px;
+}
+/*搜索框*/
+.searchInput {
+position: absolute;
+  height: 38px;
+  /* left: 10px;
+  right: 10px; */
+  /* top:1px; */
+  width: 100%;
+    line-height: 38px;
+    text-align: center;
+    /*调整placeholder左边距*/
+    /* padding-left:20px; */
+    font-size: 14px;
+    border-bottom: solid 0.5px  rgb(245, 245, 245);
+}
+
+
+
+/*1.菜单栏*/
+.menuView{
+background: white;
+height: 35px; 
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+/*2.菜单栏按钮*/
+.titleView{
+  
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    line-height: 35px;
+    color: #474747;
+}
+/*3.选中的按钮*/
+ .titleView.selectedBox{
+    color: #D02090;
+     font-size: 12px;
+ }
+
+
+
+/*背景view*/
+ .abgView{
+   display: flex;
+   flex-direction: row;
+ }
+
+/*内容box*/
+.contentBox{
+  margin:2px 0 5px 5px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(245, 245, 245);
+}
+/*图片*/
+.contentImage{
+  /* width: 100%; */
+  position: relative;
+}
+
+/*人数*/
+.peopleCount{
+position: absolute;
+z-index: 1;
+left: 5px;
+bottom: 5px;
+font-size: 10px;
+color:#6C7B8B;
+}
+
+/*购买次数*/
+.buyCount{
+position: absolute;
+z-index: 1;
+bottom: 5px;
+right: 5px;
+font-size: 10px;
+color: #6C7B8B; 
+}
+
+/*标题*/
+.boxTitle{
+  margin: 5px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+  height: 28px;
+  line-height: 15px;
+  font-size: 13px;
+}
+
+/*中间view*/
+.middleView{
+  margin: 0 5px;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+/*左边view*/
+.leftView{
+  height: 43px;
+}
+/*成功view 失败view*/
+.sucView,.faiView{
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*抢成功、抢失败*/
+.buy{
+  font-size: 10px;
+  color: #474747;
+}
+/*成功、失败补贴*/
+.subsidy{
+  width: 42px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin-left: 5px;
+   font-size: 9px;
+   font-weight: 300;
+   color: #474747;
+   border: 0.5px solid #474747;
+border-radius: 1px;
+}
+
+
+/*价格view*/
+.rightView{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 43px;
+}
+/*原价*/
+.oldPrice{
+  height: 20px;
+  line-height: 20px;
+  text-align: right;
+  font-size: 13px;
+ text-decoration:line-through;
+ color: lightgray;
+ flex-grow: 1;
+}
+/*现价*/
+.nowPrice{
+  height: 20px;
+  line-height: 20px;
+  flex-grow: 1;
+   text-align: right;
+  font-size: 15px;
+}
+/*失败view,现价*/
+.faiView,.nowPrice{
+  margin-top: 3px;
+}
+
+
+/*加入抢购*/
+.joinList{
+margin: 5px 5px 8px 5px;
+ height: 30px;
+line-height: 30px;
+text-align: center;
+  font-size: 12px;
+ color: white;
+ background:#D02090;
+ border-radius: 2px;
+}
+
+
+/*无数据图片*/
+.nodataView image{
+width: 100%;
+height: 100%;
+}
+
+/*搜索背景view*/
+.searceBgView{
+  z-index: 1;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+background: white;
+}
+/*搜索cell*/
+.searchCell{
+  margin: 0 10px 0 10px;
+padding: 10px;
+border-bottom: solid 0.5px rgb(245, 245, 245);
+color: rgb(183, 183, 183);
+font-size: 13px;
+}

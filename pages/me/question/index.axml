@@ -1,0 +1,9 @@
+<!--表格-->
+<view class="contain">
+
+<view class="cell" a:for="{{cellList}}" id="{{index}}" onTap="cellTap">
+ <label>{{item.text}}</label>
+  <image class="arrow" src="../../../image/0106arrow3x.png"></image>
+</view>
+
+</view>

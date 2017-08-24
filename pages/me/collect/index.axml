@@ -1,0 +1,42 @@
+<view class ='contain'> 
+
+<!--购View-->
+<view class="bgView">
+ <!--(1)cell-->
+ <view class="cell"  a:for="{{collectList}}" catchTap="tapCell">
+ <!--a.顶部view-->
+ <view class="topView">
+ <!--左边view-->
+   <view class="leftView">
+   <image src= "{{item.img}}"></image>
+   </view>
+   <!--右边view-->
+   <view class="rightView">
+   <view class="titleView">
+   <text>{{item.title}}</text>
+   <view class="deleteView">
+      <image src="../../../image/collected.png" catchTap="tapDelete"></image>
+   </view>
+   </view>
+   <view class="ppView">
+    <text>100人已购买</text>
+    <view class="priceView">
+    <text class="oldPriceText">¥{{item.oldPrice}}</text>
+     <text class="newPriceText">¥{{item.totalPrice}}</text>
+    </view>
+   </view>
+ </view>
+      </view>
+    </view>
+
+    <!--（2）无数据图-->
+<view class="nodataView" a:if="{{collectList.length==0}}" style="width:150px;height:150px;margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+ </view>
+</view>
+
+  </view>
+
+
+
+

@@ -1,0 +1,20 @@
+<view class="contain">
+
+<view class="cell">
+<view class="time">2017-06-02 18:00</view>
+<text class="content">【简购宝】您的限量款单肩包商家已发货，物流单号是107447494943,请登录物流查询平台查询快件的物流信息</text>
+</view>
+
+<view class="cell">
+<view class="time">2017-06-02 18:00</view>
+<text class="content">【简购宝】商家已同意您的黑色遮阳墨镜的换货申请，请尽快退货给商家，商家收到你的货物之后会为您更换货物</text>
+</view>
+
+
+<view class="cell">
+<view class="time">2017-06-02 18:00</view>
+<text class="content">【简购宝】商家已同意您的修腿破洞牛仔裤的退款申请，请尽快退货给商家，商家收到你的货物之后会在3个工作日退款款项到您的余额账户</text>
+</view>
+
+
+</view>

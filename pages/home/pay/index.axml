@@ -1,0 +1,86 @@
+<view class="contain">
+
+<!--1. 收货地址view-->
+<view class="addressView" catchTap="addAddress">
+<image class="addIcon" src="../../../image/my_about@2x.png"></image>
+<text class="addressText">{{goodsAddress}}</text>
+<image class="arrowIcon" src="../../../image/0106arrow3x.png"></image>
+</view>
+
+<!--2.商品view-->
+<view class="goodsView">
+<view class="leftView">
+<image src="../../../image/buy.png"></image>
+</view>
+<view class="rightView">
+<view class="titleView">
+<text>限量版单肩包</text>
+</view>
+<!--<view class="guigeView">
+<text>规格</text>
+<text class="guigeText">30cm*30cm</text>
+</view>-->
+<view class="colorView">
+<text>颜色</text>
+<text class="colorText">白色</text>
+</view>
+<view class="sizeView">
+<text>大小</text>
+<text class="sizeText">M码</text>
+</view>
+<view class="countView">
+<text>数量</text>
+<text class="countText">x 1</text>
+</view>
+</view>
+</view>
+
+<!--3.邮费view-->
+<view class="postageView">
+<text>邮费</text>
+<text class="postageText">商家包邮</text>
+</view>
+
+<!--3.运费险view-->
+<view class="freightView">
+<text>运费险</text>
+<text class="freightText">商家赠送</text>
+</view>
+
+
+<!--3.抢购成功view-->
+<view class="sucView">
+<text>抢购成功</text>
+<text class="sucSubsidyText">补贴30元</text>
+</view>
+
+
+<!--4.抢购失败view-->
+<view class="faiView">
+<text>抢购失败</text>
+<text class="faiSubsidyText">补贴12元</text>
+</view>
+
+<!--5.商品价view-->
+<view class="goodsPriceView">
+<text>商品价</text>
+<text class="oldPriceText">¥200</text>
+<text class="newPriceText">¥120</text>
+</view>
+
+
+<!--6.总价view-->
+<view class="msgView">
+<text>留言</text>
+<input placeholder="给商家留言"  maxlength="50"/>
+</view>
+
+
+<!--7.提交订单view-->
+<view class="orderView">
+<view class="hejiView">合计：¥120</view>
+<view class="commitView" catchTap="commitOrder">提交订单</view>
+</view>
+
+</view>
+

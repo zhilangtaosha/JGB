@@ -1,0 +1,279 @@
+.contain{
+  box-sizing: border-box;
+  width: 100%;
+}
+text{
+  font-size: 13px;
+  color: black;
+}
+/*地址view*/
+.addressView{
+  display: flex;
+  flex-direction: row;
+  height: 110rpx;
+   border-top: 0.5px solid rgb(245, 245, 245);
+  border-bottom: 0.5px solid rgb(245, 245, 245);
+  align-items: center;
+}
+/*+号*/
+.addIcon{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+/*地址*/
+.addressText{
+  flex: 1;
+  margin: 0 10px;
+  line-height: 15px;
+}
+/*箭头*/
+.arrowIcon{
+  width: 7px;
+  height: 11px;
+  margin-right: 10px;
+}
+
+
+
+/*商品view*/
+.goodsView{
+  display: flex;
+  flex-direction: row;
+}
+/*左边图片view*/
+.leftView{
+  width: 90px;
+  height: 110px;
+  margin: 10px;
+}
+/*img*/
+.leftView image{
+ width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+/*右边view*/
+.rightView{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0 10px 10px 0;
+}
+/*规格view*/
+.titleView,.guigeView,.colorView,.sizeView,.countView{
+    /*
+    前提：display: flex;    flex-direction: row;
+    设置：所有子控件的属性flex-grow:1
+    结果：子控件平分父控件的宽度
+    备注：flex-direction: column时，子控件平分父控件高度。
+  */
+    flex-grow:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0 0;
+
+}
+/*规格内容*/
+.guigeText{
+ flex: 1;
+ text-align: right;
+ color: rgb(83, 83, 83);
+}
+/*颜色view*/
+.colorView{
+    display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 0 ;
+}
+/*颜色*/
+.colorText{
+  flex: 1;
+ text-align: right;
+ color: rgb(83, 83, 83);
+}
+/*大小view*/
+.sizeView{
+    display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 0 ;
+}
+/*大小*/
+.sizeText{
+  flex: 1;
+ text-align: right;
+ color: rgb(83, 83, 83);
+}
+/*数量view*/
+.countView{
+    display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 0 ;
+}
+/*数量*/
+.countText{
+  flex: 1;
+ text-align: right;
+ color: rgb(83, 83, 83);
+}
+
+
+
+/*邮费view*/
+.postageView{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  height: 110rpx;
+  border-top: 0.5px solid rgb(245, 245, 245);
+  border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+/*邮费*/
+.postageText{
+flex: 1;
+text-align: right;
+color: rgb(83, 83, 83);
+}
+
+/*运费险view*/
+.freightView{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  height: 110rpx;
+  border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+/*运费险*/
+.freightText{
+flex: 1;
+text-align: right;
+color: rgb(83, 83, 83);
+}
+
+/*抢购成功view*/
+.sucView{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  height: 110rpx;
+  margin-top: 10px;
+  border-top: 0.5px solid rgb(245, 245, 245);
+  border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+
+/*成功补贴金额*/
+.sucSubsidyText{
+color: rgb(83, 83, 83);
+}
+
+/*抢购失败view*/
+.faiView{
+    display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  height: 110rpx;
+  border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+
+/*失败补贴金额*/
+.faiSubsidyText{
+  font-size: 14px;
+color: rgb(83, 83, 83);
+}
+
+/*商品价view*/
+.goodsPriceView{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  height: 110rpx;
+  margin-top: 10px;
+  border-top: 0.5px solid rgb(245, 245, 245);
+  border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+
+/*现在价*/
+.newPriceText{
+
+font-size: 18px;
+font-weight: 450;
+  color: rgb(83, 83, 83);
+}
+/*原价*/
+.oldPriceText{
+flex: 1;
+text-align: right;
+margin-right: 10px;
+text-decoration: line-through;
+color: rgb(183, 183, 183);
+}
+
+
+/*留言view*/
+.msgView{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 10px 0 10px;
+  height: 110rpx;
+  border-bottom: 0.5px solid rgb(245, 245, 245);
+
+}
+/*输入框*/
+input{
+  flex: 1;
+  text-align: right;
+  height: 100%;
+  margin: 0 0 0 10px;
+  color: darkgray;
+  font-size: 13px;
+}
+
+.contain{
+  padding-bottom: 100px;
+}
+/*订单view*/
+.orderView{
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+   height: 110rpx;
+   display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  border-top: 0.5px solid rgb(245, 245, 245);
+  background: white;
+}
+/*合计view*/
+.hejiView{
+   flex: 1; 
+  text-align: center;
+  color: #D02090;
+  font-size: 18px;
+}
+/*提交订单view*/
+.commitView{
+flex: 1; 
+text-align: center;
+height:110rpx;
+line-height: 110rpx;
+color: white;
+background: #D02090;
+font-size: 15px;
+}
+
+ 
+

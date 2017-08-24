@@ -1,0 +1,74 @@
+.contain{
+    width: 100%;
+}
+
+text{
+    font-size: 13px;
+   color: #474747;
+   font-weight: 300px;
+}
+/*第一栏钱包view*/
+.moneyView{
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    border-bottom: solid 0.5px rgb(245, 245, 245);
+}
+
+/*余额view*/
+.walletView{ 
+ flex:1;
+ text-align: center;
+}
+
+/*红包view*/
+.hongbaoView{ 
+flex:1;
+ text-align: center;
+}
+
+/*图片*/
+.moneyView image{
+    width: 30px;
+    height: 30px;
+    display: block;
+     margin: 40px auto 10px auto;
+}
+/*价格标题*/
+.title{
+font-size: 14px;
+}
+/*充值提现view*/
+.subsidyView ,.tixianView{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;/*两端对齐*/
+    align-items: center;    /*居中对齐*/
+    border-bottom: solid 0.5px rgb(245, 245, 245);
+}
+
+/*充值提现文字*/
+.subsidyView text,.tixianView text{
+    margin-left: 10px;
+}
+
+/*箭头*/
+.subsidyView image,.tixianView image{
+   width: 8px;
+    height: 9px;
+   margin-right: 10px;
+}
+/*说明view*/
+.noteView{
+   margin: 10px;
+
+}
+/*说明text*/
+.noteView text{
+  display: block;
+  margin-top: 10px;
+  color: darkgray;
+}
+
+

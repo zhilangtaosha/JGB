@@ -1,0 +1,25 @@
+.contain{
+    width: 100%;
+}
+text{
+font-size: 12px;
+  color: #474747;
+}
+/*cell*/
+.cell{
+  margin: 10px;
+  border: 0.5px solid lightgray;
+  padding: 10px;
+}
+/*时间*/
+.time{
+  text-align: right;
+  display: block;
+  margin: 10px ;
+  font-size: 15px;
+  color: green;
+}
+/*内容*/
+.content{
+  line-height: 17px;
+}

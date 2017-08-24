@@ -1,0 +1,32 @@
+<view class="contain">
+
+<view class="moneyView">
+<!--补贴-->
+<view class="walletView">
+<image src="../../../image/subsidy.png"></image>
+<text class="title">补贴44.3元</text>
+</view>
+<!--余额-->
+<view  class="hongbaoView">
+<image src="../../../image/balance.png"></image>
+<text class="title">余额199.3元</text>
+</view>
+</view>
+
+<!--补贴记录-->
+<view class="subsidyView" bindTap="tapSubsidyView">
+<text>补贴记录</text>
+ <image src="../../../image/0106arrow3x.png"></image>
+</view>
+<!--余额提现-->
+<view class="tixianView"  bindTap="tapTixianView">
+<text>余额提现</text>
+ <image src="../../../image/0106arrow3x.png"></image>
+</view>
+<!--说明-->
+<view class="noteView">
+<text>说明：</text>
+<text>1.每一笔商品补贴都会在7天后自动流入您的余额账户。</text>
+<text>2.若您的商品在付款后7天内有申请退款，该商品对应的补贴会自动扣除哦。</text>
+</view>
+ </view>

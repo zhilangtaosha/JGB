@@ -1,0 +1,5 @@
+.rule{
+display: inline-block;
+margin: 10px;
+line-height: 25px;  
+}

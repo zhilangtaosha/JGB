@@ -1,0 +1,108 @@
+.contain{
+    width: 100%;
+}
+/*所有文字默认设置*/
+text{
+    color: #474747;
+    font-size: 13px;
+    font-weight: 300;
+}
+.contain{
+    box-sizing: border-box;
+}
+.cell{
+   border-bottom: 5px solid rgb(245, 245, 245);
+}
+/*顶部view*/
+.topView{
+display: flex;
+flex-direction: row;
+}
+
+/*左边头像view*/
+.leftView{
+    margin: 10px;
+    width: 50px;
+    height: 60px;
+}
+/*头像*/
+.leftView image{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*右边view*/
+.rightView{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 10px 0;
+  flex: 1;
+height: 60px;
+}
+
+
+/*标题*/
+.titleView text{
+  margin-right: 10px;
+ text-align: left;
+ font-size: 16px;
+color: black;
+line-height: 16px;
+}
+/*收藏图片*/
+.deleteView image{
+  width: 20px;
+  height: 20px;
+}
+/*标题view,价格view*/
+.titleView,.ppView{
+  /*
+    前提：display: flex;    flex-direction: row;
+    设置：所有子控件的属性flex-grow:1
+    结果：子控件平分父控件的宽度
+    备注：flex-direction: column时，子控件平分父控件高度。
+  */
+    flex-grow:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*价格view*/
+.priceView{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*原价*/
+.oldPriceText{
+  height:25px;
+  line-height:25px;
+    font: 12px;
+     text-decoration: line-through; 
+}
+/*总价*/
+.newPriceText{
+  font-weight: 450;
+    margin-left: 8px;
+    height:25px;
+  line-height:25px;
+  /*vertical-align: middle;*/
+ /* color: rgb(229, 0, 100); */
+ font-size: 18px;
+}
+
+
+/*无数据图片*/
+.nodataView image{
+width: 100%;
+height: 100%;
+}
+ 
+
+
+
+
+

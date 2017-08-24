@@ -1,0 +1,249 @@
+.contain{
+    width: 100%;
+}
+/*所有文字默认设置*/
+text{
+    color: #474747;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+
+/*1.菜单栏*/
+.memuView{
+position: fixed;
+z-index: 1;
+background: white;
+top: 0;
+left: 0;
+right: 0;
+width: 100%;
+height: 40px; 
+display: flex;
+flex-direction: row;
+text-align: center;
+border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+/*2.菜单栏按钮*/
+.itemView{
+  
+    flex: 1;    /*子控件撑开父控件的宽度*/
+    font-size: 12px;
+    line-height: 40px;
+    color: #474747;
+}
+
+/*3.选中的按钮*/
+ .itemView.selectedBox{
+    color: #D02090;
+     font-size: 12px;
+   border-bottom: solid 1px #D02090;
+ }
+
+
+ /*背景view*/
+ .bgView{
+margin-top: 40px;
+ }
+.cell{
+   border-bottom: 5px solid rgb(245, 245, 245);
+}
+
+/*倒计时view*/
+.countDownView{
+  margin-top: 40px;
+background: rgb(245, 245, 245);
+text-align: center;
+height: 30px;
+line-height: 30px;
+font-size: 15px;
+font-weight: 300;
+}
+/*时间*/
+.t{
+  color: white;
+  background: #D02090;
+  padding: 0 1.5px;
+  border-radius: 2px;
+}
+
+/*顶部view*/
+.topView{
+display: flex;
+flex-direction: row;
+   border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+
+
+/*左边头像view*/
+.leftView{
+    margin:10px;
+    width: 90px;
+    height: 120px;
+}
+/*头像*/
+.leftView image{
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+
+/*右边view*/
+.rightView{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 10px 0;
+  flex: 1;
+height: 120px;
+}
+/*标题view*/
+.titleView{
+    position: relative;
+      flex-grow:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/*标题*/
+.title{
+  margin-right: 75px;
+  color: black;
+font-size: 16px;
+}
+/*状态*/
+.state{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 60px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: white;
+  background: #474747;
+  /*border: 0.5px solid #474747;*/
+  padding: 3px 5px 3px 5px;
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 1px;
+}
+
+/*状态规格、成功补贴、失败补贴、时间、单号view*/
+.stateView,.sizeView,.sucSubsidyView,.faiSubsidyView{
+  /*
+    前提：display: flex;    flex-direction: row;
+    设置：所有子控件的属性flex-grow:1
+    结果：子控件平分父控件的宽度
+    备注：flex-direction: column时，子控件平分父控件高度。
+  */
+    flex-grow:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+/*补贴view*/
+.suc,.fai{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+/*补贴*/
+.subsidy{
+  margin-right: 10px;
+border: 1px solid #FA8072;
+height: 12px;
+line-height: 12px;
+padding: 0.5px 1px;
+font-size: 11px;
+color: #FA8072;
+}
+
+
+/*时间，底部view*/
+.timeView{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin:10px;
+}
+
+/*价格view*/
+.priceView{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*总价*/
+.newPrice{
+    margin:0 5px 0 0;
+    height:20px;
+  line-height:20px;
+  vertical-align: middle;
+ color:black;
+font-weight: 550;
+ font-size: 18px;
+}
+/*原价*/
+.oldPrice{
+  height:20px;
+  line-height:20px;
+    font: 15px;
+     font-weight: 450;
+     text-decoration: line-through; 
+}
+
+/*底部view*/
+.bottomView{
+  display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin: -5px 0 10px 10px;
+}
+
+/*操作view*/
+.actionView{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*去掉边框*/
+button::after{
+  border: none;
+}
+/*邀请好友,申请退款*/
+.invite,.refund{
+      height:35px;
+  line-height:35px;
+   width: 80px;
+text-align: center;
+    font-size: 14px;
+background: white;
+ font-weight: 450;
+ padding: 0 5px;
+ margin-right: 10px;
+border-radius: 1px;
+color:#474747;
+border: 1px solid #474747;
+}
+/*邀请*/
+.invite{
+margin-left: 10px;
+}
+
+/*无数据图片*/
+.nodataView image{
+width: 100%;
+height: 100%;
+}
