@@ -1,0 +1,8 @@
+
+<view class="contain">
+
+<text class="title">以下情况会导致您的补贴比例下降:</text>
+<text class="t">1.付款后您参与抢购的商品抢购失败了，补贴比例会下降5%。</text>
+<text class="t">2.您的商品抢购成功后会提升5%补贴比例，但是在7天内提交了退款申请，5%的补贴比例会扣回来。</text>
+
+</view>

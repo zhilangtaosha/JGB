@@ -1,0 +1,179 @@
+text{
+  font-size: 13px;
+  color: #474747;
+  font-weight: 300;
+}
+/*订单顶部view*/
+.orderTopView{
+padding: 7px;
+color: rgb(183, 183, 183);
+font-size: 13px;
+border-top: 0.5px solid rgb(245, 245, 245);
+background:rgb(245, 245, 245);
+}
+
+
+/*订单view*/
+.orderView{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+/*左边view*/
+.leftView{
+  margin: 10px;
+  width: 90px;
+  height: 120px;
+}
+/*图片*/
+.icon{
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+/*右边的view*/
+.rightView{
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px 10px 10px 0;
+}
+/*标题view*/
+.titleView{
+      flex-grow:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*view*/
+.sizeView,.subsidyView,.orderidView,.priceView{
+  /*
+    前提：display: flex;    flex-direction: row;
+    设置：所有子控件的属性flex-grow:1
+    结果：子控件平分父控件的宽度
+    备注：flex-direction: column时，子控件平分父控件高度。
+  */
+    flex-grow:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+/*标题内容*/
+.title{
+  color: black;
+font-size: 16px;
+}
+
+/*价格view*/
+.pv{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+/*原价*/
+.oldPriceText{
+margin-right: 10px;
+font-size: 13px;
+color: rgb(183, 183, 183);
+text-decoration: line-through;
+}
+/*现价*/
+.nowPriceText{
+  color: black;
+  font-size: 17px;
+}
+
+
+
+/*付款信息顶部view*/
+.payTopView{
+padding: 7px;
+font-size: 13px;
+color: rgb(183, 183, 183);
+background:rgb(245, 245, 245);
+}
+/*微信支付view、支付时间view*/
+.payTypeView , .payTimeView{
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0;
+}
+/*时间view*/
+.payTimeView{
+border-top: 0.5px solid rgb(245, 245, 245);
+}
+/*微信支付/时间*/
+.wechat , .time{
+margin: 0 10px;
+} 
+/*支付金额、支付日期*/
+.payPrice , .date{
+  flex: 1;
+  text-align: right;
+  margin: 0 10px;
+}
+
+/*物流信息顶部view*/
+.courierTopView{
+padding: 7px;
+font-size: 13px;
+color: rgb(183, 183, 183);
+background:rgb(245, 245, 245);
+}
+/*快递公司，快递单号*/
+.companyView , .courierNumView{
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0;
+}
+/*快递单号view*/
+.courierNumView{
+border-top: 0.5px solid rgb(245, 245, 245);
+}
+/*快递公司/快递单号*/
+.company , .courierid{
+margin: 0 10px;
+} 
+/*快递公司文字、快递单号文字*/
+.companyText , .courieridText{
+  flex: 1;
+  text-align: right;
+  margin: 0 10px;
+}
+
+
+/*商家留言*/
+.storeMsgView{
+padding: 7px;
+font-size: 13px;
+color: rgb(183, 183, 183);
+background:rgb(245, 245, 245);
+}
+/*留言文字*/
+.storeMsg{
+  margin: 10px;
+  font-size: 12px;
+  padding: 10px;
+  height: 100px;
+  color: darkgray;
+  background: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+
+/*返回*/
+.backView{
+  text-align: center;
+  margin: 30px;
+  height: 45px;
+  line-height: 45px;
+  color: darkgray;
+  background: rgb(245, 245, 245);
+  border-radius: 5px;
+}

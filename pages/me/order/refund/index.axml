@@ -1,0 +1,36 @@
+<view class="contain">
+
+表单提交
+  <!-- <form bindsubmit="bindFormSubmit"> -->
+
+<!--订单金额view-->
+<view class="orderView">
+<text class="title1">订单金额</text>
+<text class="RMB1">¥</text>
+<input class="orderPriceInput"  name="orderPriceInput" value="100" disabled="true"/>
+</view>
+<!--退款原因view-->
+<view class="reasonView">
+<text class="title3">退款原因</text>
+<textarea class="reasonTextarea" placeholder="请输入您的退款原因" maxlength="50" name="textarea"/>
+</view>
+<!--图片View-->
+<view class="picView">
+  <image class="img" a:for="{{imgs}}" src="{{item}}" onTap="tapImg" id="{{index}}"></image>
+</view>
+
+
+      <!--说明-->
+      <text class="instruction">说明:</text>
+      <!--运费险-->
+      <text class="insurance">1.商家已送您运费险! 退货成功后赔付的运费会转入您的余额里！</text>
+      <!--快递-->
+      <text class="courier">2.商家同意您的退货申请后，您记得寄回需要退掉的商品给商家！</text>
+      <!--订单金额-->
+      <text class="order">3.商家同意您的退货申请后，会在2个工作日内退回款项到您的余额里！</text>
+    <!--提交-->
+<!--提交按钮-->
+ <button class="submit" form-type="submit" type="warn" onTap="bindFormSubmit"> 提交申请</button>
+  <!-- </form> -->
+
+</view>

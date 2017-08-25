@@ -1,0 +1,21 @@
+
+text{
+font-size: 16px;
+color:#595959;
+font-weight: 350;
+}
+.contain{
+  display: flex;
+  flex-direction: column;
+}
+/*标题*/
+.title{
+  font-size: 17px;
+color: black;
+font-weight: 400;
+}
+/*标题，描述*/
+.title,.t{
+  margin: 10px 10px 0 10px;
+  line-height: 23px;
+}

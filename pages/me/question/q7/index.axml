@@ -1,0 +1,8 @@
+
+<view class="contain">
+
+<text class="title">查询商品物流状态的方法有2种:</text>
+<text class="t">1.进入到您的订单列表，点击对应的商品查看订单详情里面的物流单号，然后去物流官网查询。</text>
+<text class="t">2.进入到您的个人主页，如果商品发货了，物流消息会在这个地方出现。 </text>
+
+</view>

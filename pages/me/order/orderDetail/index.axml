@@ -1,0 +1,75 @@
+<view class="contain">
+
+<!--订单信息顶部view-->
+<!--<view class="orderTopView">
+订单信息
+</view>-->
+<!--订单view-->
+<view class="orderView">
+<!--头像view-->
+<view class="leftView">
+<image class="icon" src="../../../../image/m3.jpg"></image>
+</view>
+<!--右边view-->
+<view class="rightView">
+<view class="titleView">
+<text class="title">黑色遮阳墨镜</text>
+</view>
+<view class="sizeView">
+<text class="size">规格</text>
+<text class="sizeText">30cm*30cm</text>
+</view>
+<view class="subsidyView">
+<text class="subsidy">补贴</text>
+<text class="subsidyText">+ 30元</text>
+</view>
+<view class="orderidView">
+<text class="orderid">单号</text>
+<text class="orderidText">107479494977747</text>
+</view>
+<view class="priceView">
+<text class="price">价格</text>
+<view class="pv">
+<text class="oldPriceText">¥120</text>
+<text class="nowPriceText">¥100</text>
+</view>
+</view>
+</view>
+</view>
+
+<!--付款信息顶部view-->
+<view class="payTopView">
+付款信息
+</view>
+<view class="payTypeView">
+<text class="wechat">微信支付</text>
+<text class="payPrice">- 10.00元</text>
+</view>
+<view class="payTimeView">
+<text class="time">支付时间</text>
+<text class="date">2017-08-09 10：00</text>
+</view>
+
+<!--物流信息顶部view-->
+<view class="courierTopView">
+物流信息
+</view>
+<view class="companyView">
+<text class="company">快递公司</text>
+<text class="companyText">申通快递</text>
+</view>
+<view class="courierNumView">
+<text class="courierid">快递单号</text>
+<text class="courieridText">20174947736667</text>
+</view>
+
+<!--商家留言顶部view-->
+<view class="storeMsgView">
+商家留言
+</view>
+<view class="storeMsg">您的退款申请商家已同意，退款金额为100元，已存入您的余额账户！</view>
+
+<!--返回-->
+<view class="backView" onTap="back">返回</view>
+
+</view>

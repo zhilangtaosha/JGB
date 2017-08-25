@@ -1,0 +1,78 @@
+text{
+  font-size: 13px;
+  color: #474747;
+}
+
+/*商家信息view/用户信息view*/
+.storeView , .userView{
+  color:rgb(183, 183, 183);
+font-size: 14px;
+margin: 15px 0 0 10px;
+
+}
+/*收件人view*/
+.storeNameView{
+  padding: 10px 0 0 10px;
+}
+/*商户手机view*/
+.storePhoneView {
+padding: 10px 0 0 10px;
+}
+/*商户地址view*/
+.addressView {
+padding: 10px 0 15px 10px;
+border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+/*用户手机view*/
+ .userPhoneView{
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+   padding: 8px 0 0 10px;
+ }
+ /*用户快递公司view*/
+.companyView{
+        display: flex;
+  flex-direction: row;
+  align-items: center;
+padding: 8px 0 0 10px;
+}
+/*用户快递单号view*/
+ .orderView{
+      display: flex;
+  flex-direction: row;
+  align-items: center;
+padding: 8px 0 10px 10px;
+border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+
+/*用户手机输入框、*用户运单号输入框、快递公司输入框*/
+.userPhoneView input, .orderView input,.companyView input{
+  width: 180px;
+  height: 40px;
+  color: #474747;
+  font-size: 13px;
+  padding: 0 0 0 10px;
+background: rgb(245, 245, 245);
+border-radius: 5px;
+}
+/*说明*/
+.instruction{
+  display: block;
+   margin: 20px 0 10px 10px;
+    color:rgb(183, 183, 183);
+}
+/*运费险*/
+.insurance{
+  display: block;
+  margin: 10px;
+}
+/*快递*/
+.courier{
+  display: block;
+  margin: 10px;
+}
+/*提交按钮*/
+.submit{
+  margin: 25px 10px;
+}

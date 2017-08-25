@@ -355,7 +355,7 @@ arr:[],
 
   // 我要退款
   refund: function (e) {
-    wx.navigateTo({
+    my.navigateTo({
       url: 'refund/index',
     })
   },

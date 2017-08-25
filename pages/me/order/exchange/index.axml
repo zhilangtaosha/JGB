@@ -1,0 +1,25 @@
+<view class="contain">
+
+
+<view class="ecchangeView">
+  <form bindsubmit="bindFormSubmit">
+  <!--输入框-->
+    <textarea placeholder="请输入您的换货要求 (换货只能更换同款商品哦)" auto-focus="true" name="textarea" maxlength="120"/>
+    <!--图片1-->
+  <image class="img1" src="../../../../image/load.jpg" bindtap="tapImg1"></image>
+  <!--图片2-->
+    <image class="img2" src="../../../../image/load.jpg" bindtap="tapImg2"></image>
+    <!--图片3-->
+      <image class="img3" src="../../../../image/load.jpg" bindtap="tapImg3"></image>
+      <!--说明-->
+      <text class="instruction">换货说明:</text>
+      <!--运费险-->
+      <text class="insurance">1.商家已送您运费险，换货有保证! 换货成功后赔付的运费会转入您的余额里！</text>
+      <!--快递-->
+      <text class="Courier">2.商家同意您的换货申请后，您可以选择快递公司寄回需要更换的货物给商家！</text>
+    <!--提交-->
+    <button class="submit" form-type="submit" type="warn"> 提交申请 </button>
+  </form>
+</view>
+
+</view>

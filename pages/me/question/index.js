@@ -103,53 +103,53 @@ Page({
 
     switch (e.currentTarget.id) {
 
-      case '0':
+      case 0:
         my.navigateTo({ 
           url: 'q1/index'
         })
         break;
 
-      case '1': my.navigateTo({ 
+      case 1: my.navigateTo({ 
         url: 'q2/index'
       })
         break;
 
-      case '2': my.navigateTo({ 
+      case 2: my.navigateTo({ 
         url: 'q3/index'
       })
         break;
 
-      case '3': my.navigateTo({ 
+      case 3: my.navigateTo({ 
         url: 'q4/index'
       })
         break;
 
-      case '4': my.navigateTo({
+      case 4: my.navigateTo({
         url: 'q5/index'
       })
         break;
 
-      case '5': my.navigateTo({
+      case 5: my.navigateTo({
         url: 'q6/index'
       })
         break;
 
-      case '6': my.navigateTo({
+      case 6: my.navigateTo({
         url: 'q7/index'
       })
         break;
 
-      case '7': my.navigateTo({
+      case 7: my.navigateTo({
         url: 'q8/index'
       })
         break;
 
-      case '8': my.navigateTo({
+      case 8: my.navigateTo({
         url: 'q9/index'
       })
         break;
 
-      case '9': my.navigateTo({
+      case 9: my.navigateTo({
         url: 'q10/index'
       })
         break;

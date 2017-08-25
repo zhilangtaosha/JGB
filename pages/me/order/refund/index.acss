@@ -1,0 +1,89 @@
+text{
+  font-size: 13px;
+   color: rgb(183, 183, 183);
+  
+}
+.contain{
+  padding-bottom: 20px;
+}
+input{
+ font-size: 13px; 
+ border-radius: 5px;
+  border: 0.7px solid rgb(183, 183, 183);
+color: #474747;
+}
+textarea{
+font-size: 12px;
+ border-radius: 5px;
+ border: 0.7px solid rgb(183, 183, 183);
+color: #474747;
+}
+
+
+
+/*订单view,原因view*/
+.orderView,.reasonView{
+  margin: 10px;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+/*¥*/
+.RMB1{
+ height: 100%;
+ margin: 0 0 0 20px;
+ color: lightgray;
+}
+/*¥*/
+.RMB2{
+ height: 100%;
+ margin: 0 0 0 20px;
+}
+/*订单金额输入框*/
+.orderPriceInput{
+    flex: 1;
+height: 40px;
+ margin: 0 0 0 20px;
+text-align: center;
+color: lightgray;
+border: 1px solid lightgray;
+font-size: 15px;
+}
+/*退款原因输入框*/
+.reasonTextarea{
+    flex: 1;
+height: 78px;
+ margin: 0 0 0 48px;
+text-align: left;
+font-size: 12px;
+padding: 20px 5px 5px 5px;
+}
+/*图片View*/
+.picView{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/*图片*/
+.img{
+width: 80px;
+height: 80px;
+border-radius: 2px;
+}
+/*说明*/
+.instruction{
+  display: block;
+   margin: 10px 0 0 10px;
+   font-size: 14px;
+   color: rgb(183, 183, 183);
+}
+/*运费险,快递,订单金额*/
+.insurance,.courier,.order{
+  display: block;
+  margin: 10px 10px 0 10px;
+  line-height: 18px;
+}
+/*提交按钮*/
+.submit{
+  margin:10px 10px 0 10px;
+}
