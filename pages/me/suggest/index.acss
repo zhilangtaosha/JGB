@@ -3,8 +3,9 @@
 }
 textarea{
     width: 90%;
+    height: 400rpx;
     margin: 20px 20px 0 15px;
-    border: solid 0.5px black;
+    border: solid 1px darkgray;
     font-size: 14px;
     padding: 8px 0 0 5px;
 }

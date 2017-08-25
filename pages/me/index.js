@@ -81,10 +81,31 @@ Page({
     //   }, fail: function (res) {
     //     //登录失败
 
-        that.setData({
+
+my.getAuthCode({
+  scopes: 'auth_user',
+  success: (res) => {
+    my.getAuthUserInfo({
+      success: (userInfo) => {
+
+         that.setData({
+          iconUrl: userInfo.avatar,
+          name: userInfo.nickName
+        }) 
+      },fail: (userInfo) => {
+
+         that.setData({
           iconUrl: "../../image/m4.jpg",
           name: "昵称"
         }) 
+      }
+    });
+  },
+});
+
+
+
+        
     // }
     // })
 

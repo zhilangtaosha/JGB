@@ -142,7 +142,7 @@
 
 <!--搜索背景view-->
 <view class="searceBgView" catchtouchmove="catchtouchmove" style="display :{{focusInput==true ? 'block':'none'}};">
-<view a:for="{{searchList}}" class="searchCell" data-cellTitle="{{item.title}}" catchtap="tapSearchCell" >{{item.title}}</view>
+<view a:for="{{searchList}}" class="searchCell" data-cellTitle="{{item.title}}" catchTap="tapSearchCell" >{{item.title}}</view>
 </view>
 
 </view>

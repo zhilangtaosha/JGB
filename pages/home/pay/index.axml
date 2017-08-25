@@ -1,11 +1,11 @@
 <view class="contain">
 
 <!--1. 收货地址view-->
-<view class="addressView" catchTap="addAddress">
+<!-- <view class="addressView" catchTap="addAddress">
 <image class="addIcon" src="../../../image/my_about@2x.png"></image>
 <text class="addressText">{{goodsAddress}}</text>
 <image class="arrowIcon" src="../../../image/0106arrow3x.png"></image>
-</view>
+</view> -->
 
 <!--2.商品view-->
 <view class="goodsView">
@@ -14,7 +14,7 @@
 </view>
 <view class="rightView">
 <view class="titleView">
-<text>限量版单肩包</text>
+<text>限量版护手霜</text>
 </view>
 <!--<view class="guigeView">
 <text>规格</text>

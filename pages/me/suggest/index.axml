@@ -1,4 +1,4 @@
 <view class="contain"> 
 <textarea placeholder="请输入您的宝贵意见..." maxlength="100" onInput="textareaInputAction"/>
-<button type="default" onTap="commitAction">提交</button>
+<button type="primary" onTap="commitAction">提交</button>
 </view>

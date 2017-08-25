@@ -261,7 +261,7 @@ input{
 .hejiView{
    flex: 1; 
   text-align: center;
-  color: #D02090;
+  color: #CD9B1D;
   font-size: 18px;
 }
 /*提交订单view*/
@@ -271,7 +271,7 @@ text-align: center;
 height:110rpx;
 line-height: 110rpx;
 color: white;
-background: #D02090;
+background: #CD9B1D;
 font-size: 15px;
 }
 

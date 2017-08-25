@@ -36,9 +36,9 @@ border-bottom: 1px solid rgb(245, 245, 245);
 
 /*3.选中的按钮*/
  .itemView.selectedBox{
-    color: #D02090;
+    color: #CD9B1D;
      font-size: 12px;
-   border-bottom: solid 1px #D02090;
+   border-bottom: solid 1px #CD9B1D;
  }
 
 

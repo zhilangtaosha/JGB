@@ -51,7 +51,7 @@ align-items: center;
 }
 /*3.选中的按钮*/
  .titleView.selectedBox{
-    color: #D02090;
+    color: #CD9B1D;
      font-size: 12px;
  }
 
@@ -189,7 +189,7 @@ line-height: 30px;
 text-align: center;
   font-size: 12px;
  color: white;
- background:#D02090;
+ background:#CD9B1D;
  border-radius: 2px;
 }
 

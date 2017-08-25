@@ -53,7 +53,7 @@ background: white;
 }
 /*3.选中的按钮*/
  .titleView.selectedBox{
-     color: #D02090;
+     color: #CD9B1D;
      background: white;
      font-size: 14px;
  }

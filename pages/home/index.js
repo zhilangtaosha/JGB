@@ -11,15 +11,15 @@ Page({
     //1. 轮播图片数据
      scrollImgs:[
       {
-        pic: '../../image/f1.jpg',
+        pic: '../../image/bag.jpeg',
         title: '19.9包邮'
       },
       {
-        pic: '../../image/f2.jpg',
+        pic: '../../image/buy.png',
         title: '买一送一'
       },
       {
-        pic: '../../image/f3.jpg',
+        pic: '../../image/my_teacher@2x.png',
         title: '特价卖场'
       },
     ],

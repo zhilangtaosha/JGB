@@ -190,8 +190,8 @@ margin:0 10px;
 }
 /*选中的按钮*/
  .colorBox.selectedColorBox{
-    color: #D02090;
-   border: solid 1px #D02090;
+    color: #CD9B1D;
+   border: solid 1px #CD9B1D;
  }
 
 
@@ -219,8 +219,8 @@ margin:0 10px;
 }
 /*选中的按钮*/
  .sizeBox.selectedSizeBox{
-    color: #D02090;
-   border: solid 1px #D02090;
+    color: #CD9B1D;
+   border: solid 1px #CD9B1D;
  }
 
 /*商品说明View*/
@@ -342,7 +342,7 @@ color: white;
 /*加入购物车*/
 .buyView{
   margin: 0 3px;
-  background:#FA8072;
+  background:#CD9B1D;
   border-radius: 1px;
 }
 /*立即抢购*/
