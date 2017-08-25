@@ -14,12 +14,12 @@
 </view>
 
 <!--补贴记录-->
-<view class="subsidyView" bindTap="tapSubsidyView">
+<view class="subsidyView" onTap="tapSubsidyView">
 <text>补贴记录</text>
  <image src="../../../image/0106arrow3x.png"></image>
 </view>
 <!--余额提现-->
-<view class="tixianView"  bindTap="tapTixianView">
+<view class="tixianView"  onTap="tapTixianView">
 <text>余额提现</text>
  <image src="../../../image/0106arrow3x.png"></image>
 </view>

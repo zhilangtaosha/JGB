@@ -1,0 +1,27 @@
+<view class="contain">
+
+<!--加号  -->
+<view class="addView">
+<text catchTap="add">+</text>
+</view>
+
+<!--银行卡列表  -->
+<view class="cardsView" a:for="{{List}}" catchTap="tapCard" data-tag="{{index}}">
+<text>{{item.title}}</text>
+<text>{{item.num}}</text>
+<image src="../../../../image/yes.png"  style="visibility:{{index==tag?'visible':'hidden'}}" ></image>
+</view>
+
+<!--金额  -->
+<view class="priceView">
+<text class="tag">提现金额</text>
+<text class="price">¥199.3</text>
+<text class="tip">3日内到账！</text>
+</view>
+
+<!--提示  -->
+<!-- <view class="tipView">3日内到账！</view> -->
+
+<!--提现  -->
+<button class="tixian" type="primary" catchTap="tixian">申请提现</button>
+</view>

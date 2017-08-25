@@ -1,0 +1,77 @@
+/* pages/me/wallet/card/index.wxss */
+
+.contain{
+  width: 100%;
+}
+
+text{
+  font-size: 13px;
+}
+/*加号view  */
+.addView{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+height: 50px;
+}
+/*➕  */
+.addView text{
+width: 50px;
+height: 100%;
+font-size: 30px;
+line-height: 50px;
+text-align: center;
+font-weight: 300;
+}
+
+/*银行卡列表view  */
+.cardsView{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+margin: 10px 15px;
+height: 50px;
+border-top: 0.5px solid rgb(245, 245, 245);
+border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+
+/*选中  */
+.cardsView image{
+  width: 20px;
+  height: 20px;
+}
+
+/*提现金额  */
+.priceView{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+border-bottom: 0.5px solid rgb(245, 245, 245);
+}
+/*¥  */
+.tag{
+margin: 0 15px;
+font-size: 13px;
+}
+/*价格  */
+.price{
+  font-size: 18px;
+}
+/*提示  */
+.tip{
+  font-size: 13px;
+  margin: 10px 15px;
+  color: rgb(183, 183, 183);
+}
+
+
+
+/*提现  */
+.tixian{
+  margin: 80px 20px 20px 20px;
+  height: 45px;
+}

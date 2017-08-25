@@ -1,0 +1,29 @@
+
+ <!--背景View-->
+<view class="bgView">
+ <!--cell-->
+ <view class="cell" a:for="{{list}}">
+ <!--左边view-->
+  <view class="leftView">
+  <image src= "{{item.img}}"></image>
+   </view>
+   <!--右边view-->
+   <view class="rightView">
+   <view class="subsidyView">
+   <view class="addView">
+    <text class="add">+</text>
+    <text class="subsidy">{{item.subsidy}}</text> 
+   </view>
+  
+     <text class="date">{{item.date}}</text>
+   </view>
+  <text class="titleText">{{item.title}}</text>  
+ 
+   </view>
+   
+ </view>
+<!--（2）无数据图-->
+<view class="nodataView" a:if="{{list.length==0}}" style="width:150px;height:150px; margin:{{nodataImgMarginTop}}px  {{nodataImgMarginLeft}}px;">
+<image src="../../../image/nodata.png"></image>
+</view>
+</view>

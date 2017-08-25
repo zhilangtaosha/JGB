@@ -67,14 +67,23 @@ Page({
 
   // 表单提交
   bindFormSubmit: function (e) {
-    console.log(e.detail.value.textarea)
+    // console.log(e.detail.value.textarea)
     
-    if (e.detail.value.textarea.length==0){
-      app.tip.showError("请输入完整信息")
-      return;
-    }
-    app.tip.showSuccess("提交成功")
-    wx.navigateBack({})
+    // if (e.detail.value.textarea.length==0){
+    //   app.tip.showError("请输入完整信息")
+    //   return;
+    // }
+    // app.tip.showSuccess("提交成功")
+    my.showToast({
+       type:'success',
+      content: '提交成功', // 文字内容
+       duration: 1500,
+      success: (res) => {
+         my.navigateBack({})
+      },
+    });
+    
+   
   
   }
 })

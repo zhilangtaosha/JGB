@@ -18,7 +18,7 @@
       <!--快递-->
       <text class="Courier">2.商家同意您的换货申请后，您可以选择快递公司寄回需要更换的货物给商家！</text>
     <!--提交-->
-    <button class="submit" form-type="submit" type="warn"> 提交申请 </button>
+    <button class="submit" form-type="submit" type="warn" onTap="bindFormSubmit"> 提交申请 </button>
   </form>
 </view>
 

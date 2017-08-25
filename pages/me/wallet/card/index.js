@@ -1,3 +1,4 @@
+// pages/me/wallet/card/index.js
 const app = getApp()
 Page({
 
@@ -5,7 +6,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    
+    tag:0,
+
+    List:[
+      {
+        title: "建设银行",
+        num: "1948477595055"
+      },
+      {
+        title: "工商银行",
+        num: "5859477595055"
+      }
+
+    ]
   },
 
   /**
@@ -60,28 +74,35 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  // onShareAppMessage: function () {
-  
-  // },
+  onShareAppMessage: function () {
 
-  // 表单提交
-  bindFormSubmit: function (e) {
-    // console.log(e.detail.value.phone)
-    // console.log(e.detail.value.orderid)
+  },
 
-    // if (e.detail.value.phone.length == 0 || e.detail.value.orderid.length == 0) {
-    //   app.tip.showError("请输入完整信息")
-    //   return;
-    // }
-    // app.tip.showSuccess("提交成功")
-       my.showToast({
-       type:'success',
-      content: '提交成功', // 文字内容
-       duration: 1500,
-      success: (res) => {
-         my.navigateBack({})
-      },
-    });
+  // 添加
+  add:function(){
+    my.navigateTo({
+      url: 'addCard/index',
+    })
+  },
+
+  // 提现
+  tixian:function(){
+my.showToast({
+  content: '已提交', // 文字内容
+  type:'success',
+  duration:'1500',
+  success: (res) => {
+    my.navigateBack({ });
+  },
+});
+    
+  },
+
+  // 选中银行卡
+  tapCard:function(e){
+    this.setData({
+      tag: e.currentTarget.dataset.tag
+    })
     
   }
 })

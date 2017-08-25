@@ -140,6 +140,7 @@ var that = this
     my.showToast({
       type: 'success',
       content: '提交成功', // 文字内容
+       duration: 1500,
       success: (res) => {
         my.navigateBack({})
       },

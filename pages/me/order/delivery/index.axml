@@ -1,6 +1,6 @@
 <view class="contain">
 
- <form bindsubmit="bindFormSubmit">
+ <!-- <form bindsubmit="bindFormSubmit"> -->
 <view class="storeView">商家信息</view>
 <view class="storeNameView">
 <text>收件人：</text>
@@ -35,7 +35,7 @@
       <!--快递-->
       <text class="courier">2.请不要使用到付或平邮，请您确认商品完好的前提下尽快将货物退回！</text>
     <!--提交-->
-    <button class="submit" form-type="submit" type="warn"> 提交 </button>
-  </form>
+    <button class="submit" form-type="submit" type="warn" onTap="bindFormSubmit"> 提交 </button>
+  <!-- </form> -->
 
 </view>

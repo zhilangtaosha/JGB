@@ -1,4 +1,4 @@
-const app = getApp()
+// pages/me/wallet/card/addCard/index.js
 Page({
 
   /**
@@ -60,28 +60,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  // onShareAppMessage: function () {
+  onShareAppMessage: function () {
   
-  // },
-
-  // 表单提交
-  bindFormSubmit: function (e) {
-    // console.log(e.detail.value.phone)
-    // console.log(e.detail.value.orderid)
-
-    // if (e.detail.value.phone.length == 0 || e.detail.value.orderid.length == 0) {
-    //   app.tip.showError("请输入完整信息")
-    //   return;
-    // }
-    // app.tip.showSuccess("提交成功")
-       my.showToast({
-       type:'success',
-      content: '提交成功', // 文字内容
-       duration: 1500,
-      success: (res) => {
-         my.navigateBack({})
-      },
-    });
-    
   }
 })
