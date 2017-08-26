@@ -6,6 +6,15 @@ text{
    overflow-x: hidden;
    overflow-y: hidden;
 }
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+display: none;
+
+}
+ ::-moz-scrollbar {
+display: none;
+
+} 
 
 
 /*搜索框view*/
@@ -58,9 +67,10 @@ align-items: center;
 
 
 /*背景view*/
- .abgView{
+ .bgView{
    display: flex;
    flex-direction: row;
+     flex-wrap: wrap; 
  }
 
 /*内容box*/

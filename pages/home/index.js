@@ -101,10 +101,10 @@ menuBox:[
     // 3.box数据
     created:true,
     currentIndex: 0,
-    contentBoxWidth: (app.windowWidth - 20) / 2,
-    picH: ((app.windowWidth - 20) / 2) * 1.8 - 110,
-    nodataImgMarginTop: (app.windowHeight - 80 - 150) / 2,
-    nodataImgMarginLeft: (app.windowWidth - 150) / 2,
+    contentBoxWidth: '',
+    picH:'',
+    nodataImgMarginTop: '',
+    nodataImgMarginLeft: '',
   },
 
   /**
@@ -128,6 +128,16 @@ menuBox:[
 
 
 var that = this
+
+// 数据
+that.setData({
+
+   contentBoxWidth: (app.windowWidth - 20) / 2,
+    picH: ((app.windowWidth - 20) / 2) * 1.8 - 110,
+    nodataImgMarginTop: (app.windowHeight - 80 - 150) / 2,
+    nodataImgMarginLeft: (app.windowWidth - 150) / 2,
+})
+
 
    //监听网络状态，更改标题
 // that.onNetworkStatusChange()

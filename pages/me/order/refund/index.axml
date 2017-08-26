@@ -1,6 +1,6 @@
 <view class="contain">
 
-表单提交
+<!-- 表单提交 -->
   <!-- <form bindsubmit="bindFormSubmit"> -->
 
 <!--订单金额view-->

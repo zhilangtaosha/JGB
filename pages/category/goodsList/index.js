@@ -116,10 +116,10 @@ Page({
     focusInput:false,
     inputValue: "",
     // 3.box数据
-    contentBoxWidth: (app.windowWidth - 20) / 2,
-    picH: ((app.windowWidth - 20) / 2) * 1.8 - 110,
-    nodataImgMarginTop: (app.windowHeight - 80 - 150) / 2,
-    nodataImgMarginLeft: (app.windowWidth - 150) / 2,
+    contentBoxWidth: '',
+    picH: '',
+    nodataImgMarginTop:'',
+    nodataImgMarginLeft: '',
   },
 
   /**
@@ -147,7 +147,13 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
- 
+ this.setData({
+
+    contentBoxWidth: (app.windowWidth - 20) / 2,
+    picH: ((app.windowWidth - 20) / 2) * 1.8 - 110,
+    nodataImgMarginTop: (app.windowHeight - 80 - 150) / 2,
+    nodataImgMarginLeft: (app.windowWidth - 150) / 2,
+ })
   },
 
   /**

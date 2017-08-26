@@ -20,7 +20,7 @@
 <view a:for="{{hotGoodsList}}" class="contentBox" style="width:{{contentBoxWidth}}px;" onTap="tapContentBox">
 <!--商品图片-->
 <view class="imgView">
-<image class="contentImage" src="{{item.img}}" style="height:{{picH}}px;">
+<image class="contentImage" src="{{item.img}}" style="width:{{contentBoxWidth}}px; height:{{picH}}px;">
 <text class="peopleCount">2人抢</text>
 <text class="buyCount">已售100</text>
 </image>
@@ -61,7 +61,7 @@
 <view a:for="{{lowPriceGoodsList}}" class="contentBox" style="width:{{contentBoxWidth}}px;" bindTap="tapContentBox">
 <!--商品图片-->
 <view class="imgView">
-<image class="contentImage" src="{{item.img}}" style="height:{{picH}}px;">
+<image class="contentImage" src="{{item.img}}" style="width:{{contentBoxWidth}}px; height:{{picH}}px;">
 <text class="peopleCount">2人抢</text>
 <text class="buyCount">已售100</text>
 </image>
@@ -102,7 +102,7 @@
 <view a:for="{{bestSellGoodsList}}" class="contentBox" style="width:{{contentBoxWidth}}px;" bindTap="tapContentBox">
 <!--商品图片-->
 <view class="imgView">
-<image class="contentImage" src="{{item.img}}" style="height:{{picH}}px;">
+<image class="contentImage" src="{{item.img}}" style="width:{{contentBoxWidth}}px; height:{{picH}}px;">
 <text class="peopleCount">2人抢</text>
 <text class="buyCount">已售100</text>
 </image>
