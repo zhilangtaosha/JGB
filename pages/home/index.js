@@ -27,36 +27,36 @@ Page({
 // 菜单栏数据：
 menuBox:[
 {
-    pic:'../../image/test.png',
+    pic:'../../image/19.9.png',
     title:'19.9包邮'
 },
 {
-  pic: '../../image/test.png',
+  pic: '../../image/maiyi.png',
   title: '买一送一'
 
 },
 {
-  pic: '../../image/test.png',
+  pic: '../../image/pinpai.png',
   title: '品牌清仓'
 },
 {
-  pic: '../../image/test.png',
+  pic: '../../image/tejia.png',
   title: '特价卖场'
 },
 {
-  pic: '../../image/test.png',
+  pic: '../../image/meishi.png',
   title: '美食天下'
 },
 {
-  pic: '../../image/test.png',
+  pic: '../../image/pinzhi.png',
   title: '品质水果'
 },
 {
-  pic: '../../image/test.png',
+  pic: '../../image/jujia.png',
   title: '居家优品'
 },
 {
-  pic: '../../image/test.png',
+  pic: '../../image/shengqian.png',
   title: '省钱妈咪'
 }
 
